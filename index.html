@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Abbas - Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         footer {
+            background-color: #adc6de;
+            color: #555;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-icons {
+            font-size: 36px;
+        }
+
+        .contact-icons a {
+            color: #555;
+            margin: 0 10px;
+        }
+
+        .contact-icons a:hover {
+            color: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #adc6de;
+        }
+        nav{
+            background-color: transparent;
+        }
+        header img {
+            width: 50px;
+        }
+        header h4{
+            margin-bottom:100px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+        .logo {
+        display: flex;
+        flex-direction: row;
+        }
+        .logo span{
+            margin: 0 15px;
+            margin-top:10px;
+        }
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+}
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content {
+    display: inline-block;
+    text-align: left; /* Align content to the left by default */
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Apply border radius if needed */
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        display: block;
+        text-align: center; /* Center align content on smaller screens */
+    }
+
+    .image-container {
+        display: block;
+        margin: 0 auto 10px; /* Center align image container */
+    }
+}
+
+
+.image-container {
+    display: none; /* Hide the image by default */
+}
+
+.image-container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 100%; /* Optional: Apply border radius if needed */
+}
+
+@media only screen and (max-width: 768px) {
+    .circle {
+        display: none; /* Hide the circle on mobile */
+    }
+    .contact-icons {
+            font-size: 20px;
+        }
+
+        .contact-icons a {
+            color: #555;
+            margin: 0 8px;
+        }
+
+        .contact-icons a:hover {
+            color: #ffffff;
+        }
+
+    .image-container {
+        display: block; /* Show the image container on mobile */
+    }
+    .image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 100%; /* Optional: Apply border radius if needed */
+}
+
+}
+@media only screen and (max-width: 480px) {
+    .circle {
+        display: none; /* Hide the circle on mobile */
+    }
+
+    .image-container {
+        display: block; /* Show the image container on mobile */
+    }
+}
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .hero .circle {
+            width: 300px;
+            height: 300px;
+            background-color: #adc6de;
+            border-radius: 100%;
+            position: absolute;
+            
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin: 10px 0;
+            z-index: 1;
+            color: #777;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #777;
+            z-index: 1;
+        }
+        .goal {
+            position: absolute;
+            left: 50px;
+            bottom: 90px;
+            top: 150px;
+            text-align: left;
+            width: 20%;
+        }
+        .goal h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .goal p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .goal{
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s, transform 3s;
+        }
+        .resume-link, .contact {
+            position: absolute;
+            text-decoration: none;
+            color: #777;
+            background-color: #adc6de;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .resume-link {
+            right: 50px;
+            bottom: 50px;
+            background-color: #adc6de;
+            color: #777;
+            
+        }
+       
+        .contact {
+            right: 50px;
+            top: 50px;
+        }
+        .projects, .Certifications, .trainigs{
+            background-color: #ffff;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact-info {
+            background-color: #adc6de;
+            padding: 50px;
+            text-align: center;
+        }
+        .about h2, .projects h2, .contact-info h2, .Certifications h2, .trainigs h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .project-item p, .contact-info p, .Certifications p, .trainigs p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+        .about {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 50px;
+   margin-top: 50px;
+}
+
+.about-item {
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 3s;
+}
+
+.about-text {
+    text-wrap: 500px;
+    font-size: 1rem;
+    color: #555;
+    
+    margin: 5px 0;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    animation: fadeInUp 3s forwards;
+}
+
+.about-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    animation: fadeInUp 3s forwards 3s;
+}
+
+.about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    animation: fadeInUp 3s forwards 2s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .projects{
+            margin-top:80px;
+        }
+        .project-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project-item {
+            background-color: #ffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s, transform 3s;
+        }
+        .project-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .Certifications-list  {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .Certifications-item {
+            background-color: #ffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s, transform 3s;
+        }
+        .Certifications-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .Certifications-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .trainigs-list  {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .trainigs-item {
+            background-color: #ffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s, transform 3s;
+        }
+        .trainigs-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .trainigs-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Media query for devices with a max width of 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    header nav a {
+        margin: 10px 0;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .Certifications-item h3, .project-item h3, .trainigs-item h3{
+          font-size: 1rem;
+    }
+    .Certifications-item p, .project-item p, .trainigs-item p{
+        font-size: 0.9rem;
+    }
+    
+    
+    .goal {
+        padding: 50px;
+        position: relative;
+        width: auto;
+        left: auto;
+        bottom: auto;
+        top: auto;
+       
+        margin-bottom: 20px;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .goal h2,.about h2,.projects h2,.Certifications h2,.trainigs h2 {
+        font-size: 1.8rem;
+    }
+    .goal p {
+        font-size: 0.9rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-item, .about-image {
+        width: 100%;
+    }
+.about-image{
+    display: none;
+}
+    .about-item {
+        order: 1;
+    }
+    .about-image {
+        order: 2;
+    }
+    .projects, .Certifications, .trainigs {
+        padding: 20px;
+    }
+    .project-item, .Certifications-item, .trainigs-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+}
+
+/* Media query for devices with a max width of 480px */
+@media (max-width: 480px) {
+    
+    header img {
+        width: 30px;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .goal h2,.about h2,.projects h2,.Certifications h2,.trainigs h2 {
+        font-size: 1.5rem;
+    }
+    .goal p {
+        font-size: 1rem;
+    }
+    .about img {
+        width: 200px;
+        height: 200px;
+    }
+    .project-item h3, .Certifications-item h3, .trainigs-item h3 {
+        font-size: 1rem;
+    }
+    .project-item p, .Certifications-item p, .trainigs-item p {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .resume-link, .contact {
+        padding: 8px 16px; /* Adjusted padding to make buttons smaller */
+        font-size: 0.9rem; /* Adjusted font size to make buttons smaller */
+    }
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu-icon:hover {
+    color: #777;
+}
+@media (max-width: 600px) {
+    .resume-link, .contact {
+        padding: 8px 16px; /* Adjusted padding to make buttons smaller */
+        font-size: 0.6rem;
+        
+        /* Adjusted font size to make buttons smaller */
+    }
+}
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .contact-info h2 {
+         font-size: 1.5rem;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 40%; */
+        background-color: tr;
+        width: 20%;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        margin: 15px;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+    .resume-link, .contact {
+        padding: 8px 16px; /* Adjusted padding to make buttons smaller */
+        font-size: 0.9rem;
+        right: 5px;
+        /* Adjusted font size to make buttons smaller */
+    }
+    
+   
+
+    .about-text{
+        width: 100%;
+    }
+
+    .projects, .Certifications, .trainigs {
+        padding: 20px;
+    }
+
+/* Ensure goal section color */
+.goal {
+    background-color: #fff; /* Adjust to match the desired color */
+    color: #555; /* Adjust text color if needed */
+}
+
+/* Toggle menu styles */
+
+.toggle {
+            display:none;
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            font-size: 24px; /* Adjust icon size */
+            color: #555; /* Adjust icon color */
+            cursor: pointer;
+        }
+
+nav {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 10px;
+    }
+    nav a {
+        margin: 15px 0;
+        color: #555;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    nav.show {
+        display: flex;
+    }
+    nav{
+        width: 30px;
+    }
+}
+.skills-section {
+            background-color: #ffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        
+        .skill-item i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .skill-item p {
+            font-size: 1em;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .skill-item {
+                width: 35%;
+            }
+            .skills-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .skill-item {
+                width: 60%;
+                
+            }
+            .skills-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(2);
+            }
+        }
+         /* Internship Section Styles */
+         .internship-section {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .internship-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .internship-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .internship-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .internship-item i {
+            font-size: 2em;
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .internship-item h3 {
+            font-size: 1.2em;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .internship-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Media Query for Section Responsiveness */
+        @media (max-width: 768px) {
+            .internship-item {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .internship-item {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo1.png" alt="Logo" class="logo-img">
+            <span>Mohd Abbas</span>
+            <div class="toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        <nav id="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#trainigs">Trainings</a>
+        </nav>
+    </header>
+    
+
+<section class="hero">
+    <a href="#contact" class="contact">Contact</a>
+    <div class="circle"></div>
+        <div class="image-container">
+            <img src="m1.jpg" alt="Profile Image">
+        </div> 
+    <p class="greeting">Hi! I’m Mohd Abbas</p>
+    <h2>DATA ANALYST</h2>
+    <a href="MOHD_ABBAs.docx" class="resume-link">Resume</a>
+    
+</section>
+
+<section class="goal">
+    <h2>Goal</h2>
+    <p>My goal is to transform raw data into actionable insights that drive informed decision-making. Specializing in complex data analysis and interpretation, I enhance organizational understanding and optimize operations. Using advanced data science techniques, I empower businesses to make precise, data-driven decisions, fostering a culture of informed decision-making for sustained business success</p>
+</section>
+
+<section class="about" id="about">
+    
+    <div class="about-item"style="animation-delay: 2s;">
+        <h2>About Me</h2>
+      <p> "Hello! I'm Mohd Abbas, a passionate aspiring Data Analyst eager to contribute to the field of data science and analytics. My academic background has equipped me with foundational knowledge in interpreting and analyzing data. I'm enthusiastic about helping businesses leverage data to make informed decisions that enhance their operations and strategies. While I'm new to the industry, I have a strong interest in data visualization, statistical analysis, and predictive modeling. I am dedicated to learning and applying these skills to transform complex data into valuable insights that drive business success."</p>   </div>
+   <div class="about-image"style="animation-delay: 3s;">
+<img src="m1.jpg" alt="Mohd Abbas">   </div>
+</section>
+<section class="skills-section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill-item" style="animation-delay: 1s;">
+            <i class="fas fa-database"></i>
+            <p>SQL</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1.2s;">
+            <i class="fas fa-chart-line"></i>
+            <p>Data Analysis</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1.4s;">
+            <i class="fas fa-table"></i>
+            <p>Excel</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1.6s;">
+            <i class="fas fa-code"></i>
+            <p>Python</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1.8s;">
+            <i class="fas fa-chart-pie"></i>
+            <p>Google Analytics</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 2s;">
+            <i class="fas fa-chart-bar"></i>
+            <p>Power BI</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1s;">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+        </div>
+        <div class="skill-item" style="animation-delay: 1s;">
+            <i class="fas fa-code-branch"></i>
+            <p>DSA (Data Structures and Algorithms)</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <div class="project-item" style="animation-delay: 0.5s;">
+            <img src="fake news.png" alt="Project One">
+            <h3>Fake News Detection Model</h3>
+            <p>Developed a basic Fake News detection model using Flask API and the Random Forest algorithm, achieving 89% accuracy. Employed Natural Language Processing (NLP) and vectorizer techniques for data preprocessing.</p>
+        </div>
+        <div class="project-item" style="animation-delay: 1s;">
+            <img src="text.png" alt="Project Two">
+            <h3>Text Analysis Tool</h3>
+            <p>The Text Analysis Web App, built with Flask, leverages Pandas for data manipulation, NLTK for natural language processing, and Textstat for computing text statistics. This tool efficiently handles data uploads, processing, and analysis, offering users valuable insights into their textual data.</p>
+        </div>
+        <div class="project-item" style="animation-delay: 1.5s;">
+            <img src="hotel.png" alt="Project Three">
+            <h3>Hotel Booking Analysis</h3>
+            <p>The Hotel Booking Analysis project employs Python and data analysis tools to explore booking data, revealing insights into booking trends, cancellation rates, and average daily rates. This aids stakeholders in decision-making and strategy optimization.</p>
+        </div>
+        <div class="project-item" style="animation-delay: 2s;">
+            <img src="desh2.png" alt="Project One">
+            <h3>Amazon Global Sales Dashboard</h3>
+            <p>Developed using Power BI, this dashboard visualizes Amazon's global sales data from 2012 to 2015, highlighting key metrics, sales by segment and market, and profit analysis, aiding stakeholders in informed decision-making.</p>
+        </div>
+        <div class="project-item" style="animation-delay: 2.5s;">
+            <img src="desh1.png" alt="Project One">
+            <h3>Amazon Sales Dashboard</h3>
+            <p>Developed using Power BI, this dashboard visualizes Amazon's sales data, highlighting key metrics such as order count, quantity, and profit. It provides insights into sales trends, category performance, and state-wise profits.</p>
+        </div>
+        <div class="project-item" style="animation-delay: 3s;">
+            <img src="project1.jpg" alt="Project One">
+            <h3>Project One</h3>
+            <p>Description of project one. This project involves analyzing sales data to improve business strategies.</p>
+        </div>
+    </div>
+</section>
+
+<section class="Certifications" id="Certifications">
+    <h2>Certifications</h2>
+    <div class="Certifications-list">
+        <div class="Certifications-item" style="animation-delay: 0.5s;">
+            <img src="Google.png" alt="Project One">
+            <h3>Google Google Data Analytics Professional Certificate</h3>
+            <p>Offered by Google on Coursera, this certificate provides essential data analysis skills, including data cleaning, visualization, and SQL. Through hands-on projects, participants gain practical experience to pursue entry-level roles in data analytics.</p>
+        </div>
+        <div class="Certifications-item" style="animation-delay: 1s;">
+            <img src="py-1.png" alt="Project Two">
+            <h3>Python 3.4.3 Certification</h3>
+            <p>Certified by Teerthanker Mahaveer University and IIT Bombay, this certification confirms Mohd Abbas's proficiency in Python 3.4.3, covering essential concepts and applications. With a score of 75% and invigilated by Vandana Sharma, it attests to a strong understanding of Python fundamentals.</p>
+        </div>
+        <div class="Certifications-item" style="animation-delay: 0.5s;">
+            <img src="py-2.png" alt="Project One">
+            <h3>Python for Data Science Certification</h3>
+            <p>Issued by IBM to Mohd Abbas on April 26, 2024, this certification confirms proficiency in Python programming for data science, covering data manipulation, analysis, and visualization.</p>
+        </div>
+        <div class="Certifications-item" style="animation-delay: 0.5s;">
+            <img src="sql-1.png" alt="Project One">
+            <h3>SQL</h3>
+            <p>I earned a certification in SQL from Udemy in July 2024. The course covered fundamentals of SQL querying, database management, and advanced data manipulation techniques.</p>
+        </div>
+        <div class="Certifications-item" style="animation-delay: 0.5s;">
+            <img src="pivot.png" alt="Project One">
+            <h3>Excel Pivot Table Analysis</h3>
+            <p>I earned a Pivot Table certification from Kulture Hire in July 2024. The certification covered advanced data analysis techniques, including creating complex pivot tables, summarizing data effectively, and using advanced functionalities like calculated fields and slicers.</p>
+        </div>
+        <div class="Certifications-item" style="animation-delay: 0.5s;">
+            <img src="google1.png" alt="Project One">
+            <h3>Google Analytics</h3>
+            <p>I completed the Google Analytics certification from Google Academy in May 2024. The certification covered understanding website traffic, analyzing user behavior, and interpreting data to optimize digital marketing strategies.</p>
+        </div>
+    </div>
+</section>
+
+<section class="trainigs" id="trainigs">
+    <h2>Trainings</h2>
+    <div class="trainigs-list">
+        <div class="trainigs-item" style="animation-delay: 0.5s;">
+            <img src="ml_train.png" alt="Project One">
+            <h3>Machine Learning Concepts and Modeling</h3>
+            <p>Completed at Teerthanker Mahaveer University in 2023, this certification covers essential machine learning concepts and modeling techniques, providing a solid foundation in the field.</p>
+        </div>
+        <div class="trainigs-item" style="animation-delay: 1s;">
+            <img src="accemture.png" alt="Project Two">
+            <h3>Accenture North America Data Analytics and Visualization Job Simulation</h3>
+            <p>Completed on Forage in March 2024, this simulation involved advising a hypothetical social media client as a Data Analyst at Accenture, focusing on data analytics and visualization techniques.</p>
+        </div>
+        <div class="trainigs-item" style="animation-delay: 1.5s;">
+            <img src="project3.jpg" alt="Project Three">
+            <h3>Project Three</h3>
+            <p>Description of project three. This project includes developing predictive models for financial forecasting.</p>
+        </div>
+        
+    </div>
+</section>
+<section class="internship-section" id="internships">
+    <h2>Internships</h2>
+    <div class="internship-list">
+        <div class="internship-item">
+            <h3><i class="fas fa-briefcase"></i> Data Analyst Intern</h3>
+            <p>Company XYZ, June 2023 - August 2023</p>
+            <p>Worked on data analysis projects, creating visualizations and reports.</p>
+        </div>
+        <div class="internship-item">
+            <h3><i class="fas fa-laptop-code"></i> Software Developer Intern</h3>
+            <p>Company ABC, January 2023 - May 2023</p>
+            <p>Developed and maintained web applications using Java and Spring Framework.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="contact-info" id="contact">
+    <h2>Contact Information</h2>
+    <div class="contact-icons">
+        <a href="mailto:mabbas122119sk@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mohd-abbas-829a78254/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 Mohd Abbas. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const projectItems = document.querySelectorAll('.project-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    projectItems.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    projectItems.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        const projectsSection = document.querySelector('.projects');
+        observer.observe(projectsSection);
+    
+});    
+
+        document.addEventListener('DOMContentLoaded', function () {
+        const about = document.querySelectorAll('.about-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    about.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        
+        const about1 = document.querySelector('.about');
+        observer.observe(about1);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const about = document.querySelectorAll('.about-image');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    about.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        
+        const about1 = document.querySelector('.about');
+        observer.observe(about1);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const skillItems = document.querySelectorAll('.skill-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillItems.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    skillItems.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        const skillsSection = document.querySelector('.skills-section');
+        observer.observe(skillsSection);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const skillItems = document.querySelectorAll('.internship-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillItems.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    skillItems.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        const skillsSection = document.querySelector('.internship-section');
+        observer.observe(skillsSection);
+    });
+    
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const about = document.querySelectorAll('.goal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    about.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        
+        const about1 = document.querySelector('.goal');
+        observer.observe(about1);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const about = document.querySelectorAll('.Certifications-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    about.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        
+        const about1 = document.querySelector('.Certifications');
+        observer.observe(about1);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const about = document.querySelectorAll('.trainigs-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.5}s`;
+                        item.style.opacity = 1;
+                        item.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    about.forEach((item) => {
+                        item.style.opacity = 0;
+                        item.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        
+        const about1 = document.querySelector('.trainigs');
+        observer.observe(about1);
+    });
+    
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+
+</script>
+</body>
+</html>
